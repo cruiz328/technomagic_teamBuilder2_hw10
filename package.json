@@ -1,0 +1,26 @@
+{
+  "name": "technomagic_teambuilder2_hw10",
+  "version": "1.0.0",
+  "description": "First off, this repo is a second attempt and a blank slate for the previous version that was completely formatted and coded incorrectly that I decided it would be easier to just start from scratch.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cruiz328/technomagic_teamBuilder2_hw10.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cruiz328/technomagic_teamBuilder2_hw10/issues"
+  },
+  "homepage": "https://github.com/cruiz328/technomagic_teamBuilder2_hw10#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^28.1.0"
+  }
+}
