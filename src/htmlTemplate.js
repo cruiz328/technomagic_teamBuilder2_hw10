@@ -24,12 +24,14 @@ function createCards(team) {
   return html.join("")
 }
 
+// Manager
+
 function generateManagerCard(manager) {
   return `
     <div class="card employee-card col">
     <div class="card-header">
         <h2 class="card-title">${manager.getName()}</h2>
-        <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i> ${manager.getRole()}</h3>
+        <h3 class="card-title"><i class="fas fa-solid fa-laptop mr-2"></i> ${manager.getRole()}</h3>
     </div>
     <div class="card-body">
         <ul class="list-group">
@@ -42,12 +44,16 @@ function generateManagerCard(manager) {
     `
 }
 
+// End of Manager
+
+// Engineer
+
 function generateEngineerCard(engineer) {
   return `
     <div class="card employee-card col">
     <div class="card-header">
         <h2 class="card-title">${engineer.getName()}</h2>
-        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i> ${engineer.getRole()}</h3>
+        <h3 class="card-title"><i class="fas fa-solid fa-code mr-2"></i> ${engineer.getRole()}</h3>
     </div>
     <div class="card-body">
         <ul class="list-group">
@@ -62,12 +68,16 @@ function generateEngineerCard(engineer) {
     `
 }
 
+// End of Engineer
+
+// Intern
+
 function generateInternCard(intern) {
   return `
     <div class="card employee-card col">
     <div class="card-header">
         <h2 class="card-title">${intern.getName()}</h2>
-        <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i> ${intern.getRole()}</h3>
+        <h3 class="card-title"><i class="fas fa-solid fa-baby mr-2"></i> ${intern.getRole()}</h3>
     </div>
     <div class="card-body">
         <ul class="list-group">
@@ -80,6 +90,8 @@ function generateInternCard(intern) {
     `
 }
 
+// End of Intern
+
 module.exports = (team) => {
   return `
 <!DOCTYPE html>
@@ -91,11 +103,11 @@ module.exports = (team) => {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <title>M8tes</title>
+    <title>Techno Magic Team Builder:2</title>
 </head>
 <body>
     <header>
-        <h1 class="navbar-text text-center bg-info">My M8tes</h1>
+    <h1 class="navbar-text text-light text-center navbar-dark bg-dark bg-info">Techno Magic<br>Team Builder:2</h1>
     </header>
     <main class="container row">
         ${createCards(team)}
