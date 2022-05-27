@@ -5,7 +5,7 @@
   # ___________________________
   
 # Description
-A command line application that uses 
+A command line application that uses a prompt to build team profiles to be showcased in an HTML file
 # ___________________________
 # Table of Contents
 
