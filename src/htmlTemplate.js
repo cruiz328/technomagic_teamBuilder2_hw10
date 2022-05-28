@@ -30,10 +30,8 @@ function generateManagerCard(manager) {
   return `
     <div class="card employee-card col">
     <div class="card-header">
-        <h2 class="card-title">${manager.getName()}</h2>
-        <h3 class="card-title"><i class="fas fa-solid fa-laptop mr-2"></i> ${manager.getRole()}</h3>
-    </div>
-    <div class="card-body">
+        <h2 list-group-item">${manager.getName()}</h2>
+        <h4 class="list-group-item"><i class="fas fa-solid fa-laptop mr-2"></i> ${manager.getRole()}</h4>
         <ul class="list-group">
             <li class="list-group-item">ID: ${manager.getId()}</li>
             <li class="list-group-item">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
@@ -52,10 +50,8 @@ function generateEngineerCard(engineer) {
   return `
     <div class="card employee-card col">
     <div class="card-header">
-        <h2 class="card-title">${engineer.getName()}</h2>
-        <h3 class="card-title"><i class="fas fa-solid fa-code mr-2"></i> ${engineer.getRole()}</h3>
-    </div>
-    <div class="card-body">
+        <h2 class="list-group-item">${engineer.getName()}</h2>
+        <h4 class="list-group-item"><i class="fas fa-solid fa-code mr-2"></i> ${engineer.getRole()}</h4>
         <ul class="list-group">
             <li class="list-group-item">ID: ${engineer.getId()}</li>
             <li class="list-group-item">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></li>
@@ -76,10 +72,8 @@ function generateInternCard(intern) {
   return `
     <div class="card employee-card col">
     <div class="card-header">
-        <h2 class="card-title">${intern.getName()}</h2>
-        <h3 class="card-title"><i class="fas fa-solid fa-baby mr-2"></i> ${intern.getRole()}</h3>
-    </div>
-    <div class="card-body">
+        <h2 class="list-group-item">${intern.getName()}</h2>
+        <h4 class="list-group-item"><i class="fas fa-solid fa-baby mr-2"></i> ${intern.getRole()}</h4>
         <ul class="list-group">
             <li class="list-group-item">ID: ${intern.getId()}</li>
             <li class="list-group-item">Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></li>
@@ -91,6 +85,8 @@ function generateInternCard(intern) {
 }
 
 // End of Intern
+
+                // HTML Template
 
 module.exports = (team) => {
   return `
