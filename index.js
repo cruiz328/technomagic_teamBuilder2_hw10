@@ -247,5 +247,5 @@ const addIntern = async () => {
 const buildTeam = () => {
   // made index file and then passed in data
   fs.writeFileSync("./dist/index.html", render(teamMembersArr))
-  console.log("finished building team")
+  console.log("team built")
 }
