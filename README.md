@@ -59,8 +59,8 @@ A command line application that uses a prompt to build team profiles to be showc
 lemmy125@gmail.com
 
 ## Video Link:
-# ___________________________
+- https://www.youtube.com/watch?v=aoFu1ZplOnk
 
 ## Images
-# ___________________________
+<img src="">
 

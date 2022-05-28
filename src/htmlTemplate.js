@@ -1,12 +1,10 @@
-//   take the array and buld TEMPLATE
-
 // function that puts all the chosen team member cards in to an array that gets passed to anonymous function at the bottom
 function createCards(team) {
   const html = []
   // is a type of 'for each' loop
   for (const teamMember of team) {
     // chooses card to make for what team member is in the array
-    // getrole comes from object method allowing the team member roll to pass in and trigger a switch statement
+    // getRole comes from object method allowing the team member roll to pass in and triggers a switch statement
     switch (teamMember.getRole()) {
       case "Manager":
         html.push(generateManagerCard(teamMember))
@@ -19,8 +17,7 @@ function createCards(team) {
         break
     }
   }
-  // .join converts arr of team member cards in to string
-  // console.log(html);
+  // .join converts array of team member cards to string
   return html.join("")
 }
 
